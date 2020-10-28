@@ -12,10 +12,10 @@ C: Redirects the form submitter to the Invoice Payment Page to collect immediate
 ## Related Zoho Apps:
 
 Zoho Creator &
-Zoho Invoice*
+Zoho Invoice
 
-*This could also work with Zoho Books with slight modification.
-*Same code could work in Zoho CRM and other systems with slight modification with something like a Custom Button.
+This could also work with Zoho Books with slight modification.
+ Same code could work in Zoho CRM and other systems with slight modification with something like a Custom Button.
 
 ## The Process In-Depth
 
