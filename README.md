@@ -21,6 +21,7 @@ The Process In-Depth
 
 A: In order to create an Invoice for this form submission, we need to have a Customer record in Zoho Invoice for the submitter. We may already have a Customer record or we may not. If we don't, we need to make one. If we do, we need to know so we can associate an Invoice to that existing customer. That's what this script does. (see script below with comments).
 
+'''javascript
 // We search the Contacts module in Zoho Invoice for Contacts with a matching email address to the one provided.
 searchParam = {"email":email};
 contactSearch = invokeurl
@@ -64,6 +65,7 @@ if(contactSearch.get("contacts").size() > 0)
 			contactPerson = contact.get("contact_persons").get(0);
 			contactPersonId = contactPerson.get("contact_person_id");
 		}
+'''
 
 B: Once we have our Zoho Invoice customer, we can put together our Invoice. 
 
