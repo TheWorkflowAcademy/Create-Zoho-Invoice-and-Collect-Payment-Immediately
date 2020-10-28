@@ -108,9 +108,9 @@ B: Once we have our Zoho Invoice customer, we can put together our Invoice.
 		createInvoice = zoho.books.createRecord("invoices",orgId,invoice);
 		info createInvoice;
 ```
-```javascript
-C: Once we've created the Invoice we can get its Payment Link out and redirect the form submitter to that page.
 
+C: Once we've created the Invoice we can get its Payment Link out and redirect the form submitter to that page.
+```javascript
 //First we mark it as Sent. This enables us to redirect them to the Payment Link later.
 marksent = invokeurl
   [
