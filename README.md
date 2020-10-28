@@ -1,7 +1,7 @@
 # CreateInvoiceandCollectPaymentfromCreator
 A method to collect payment from a Creator form that acts as a sort of registration or purchase order. It generates a Zoho Invoice record and redirects to its Payment Page (the same page people are sent to when they click the 'Pay Now' link on the Invoice email) upon submission.
 
-**Core Idea
+##Core Idea
 
 Suppose you had a Registration Form for an event that requires payment but you wanted to accept registrations on deferred payment terms like a standard invoice. Or imagine it was an order form that allowed customers to place orders and pay on terms. Rather than *requiring* immediate payment to complete registration (like a typical 'payment portal' on a form) you could generate an invoice and 'encourage' immediate payment by redirecting the form submitter to the invoice payment page when they submit the form. This script does just that--upon submission it:
 
@@ -9,7 +9,7 @@ A: Creates a Zoho Invoice Customer (if necessary)
 B: Creates a Zoho Invoice record for the customer related to the form submission
 C: Redirects the form submitter to the Invoice Payment Page to collect immediate payment.
 
-**Related Zoho Apps:
+##Related Zoho Apps:
 
 Zoho Creator &
 Zoho Invoice*
@@ -17,7 +17,7 @@ Zoho Invoice*
 *This could also work with Zoho Books with slight modification.
 *Same code could work in Zoho CRM and other systems with slight modification with something like a Custom Button.
 
-**The Process In-Depth
+##The Process In-Depth
 
 A: In order to create an Invoice for this form submission, we need to have a Customer record in Zoho Invoice for the submitter. We may already have a Customer record or we may not. If we don't, we need to make one. If we do, we need to know so we can associate an Invoice to that existing customer. That's what this script does. (see script below with comments).
 
